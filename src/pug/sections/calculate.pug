@@ -1,0 +1,62 @@
+section.section.calculate 
+  .container 
+    .section__title.h2 Расчет стоимости
+    .calculate__wrapper
+      .calculate__action 
+        .calculate__left 
+          .calculate__section
+            .calculate__section-title Количество товара
+            .calculate__section-controls.counter 
+              button(type="button").counter__minus
+                +svgSprite(12, 12, 'minus')
+              input.counter__input(type="number" placeholder="0")
+              button(type="button").counter__plus
+                +svgSprite(12, 12, 'plus')
+          .calculate__section
+            .calculate__section-title Забор товара, куб.м.
+            .calculate__section-controls.counter 
+              button(type="button").counter__minus
+                +svgSprite(12, 12, 'minus')
+              input.counter__input(type="number" placeholder="0")
+              button(type="button").counter__plus
+                +svgSprite(12, 12, 'plus')
+          .calculate__section
+            .calculate__section-title Хранение, дни
+            .calculate__section-controls.counter 
+              button(type="button").counter__minus
+                +svgSprite(12, 12, 'minus')
+              input.counter__input(type="number" placeholder="0")
+              button(type="button").counter__plus
+                +svgSprite(12, 12, 'plus')
+        .calculate__right 
+          .calculate__section
+            .calculate__section-title Упаковка
+            .calculate__section-controls
+              label.form-checkbox(for="check-01")
+                input.form-checkbox__input(type="checkbox" id="check-01")
+                span.form-checkbox__text Бопп-пакет
+              label.form-checkbox(for="check-02")
+                input.form-checkbox__input(type="checkbox" id="check-02")
+                span.form-checkbox__text Зип-пакет
+              label.form-checkbox(for="check-03")
+                input.form-checkbox__input(type="checkbox" id="check-03")
+                span.form-checkbox__text ПВД
+              label.form-checkbox(for="check-04")
+                input.form-checkbox__input(type="checkbox" id="check-04")
+                span.form-checkbox__text Пупырка
+          .calculate__section
+            .calculate__section-title Дополнительные услуги
+            .calculate__section-controls
+              label.form-checkbox(for="check-05")
+                input.form-checkbox__input(type="checkbox" id="check-05")
+                span.form-checkbox__text Нужна проверка на брак
+              label.form-checkbox(for="check-06")
+                input.form-checkbox__input(type="checkbox" id="check-06")
+                span.form-checkbox__text Нужна маркировка
+      .calculate__total 
+        .calculate__total-info 
+          .calculate__total-title Стоимость работ
+          .calculate__total-price 1 500 ₽
+        .calculate__total-action 
+          .calculate__total-desc Указанная стоимость носит информационный характер и не является окончательной
+          button(type="button" data-modal-open).calculate__total-btn.btn.btn--black.btn--wide Оставить заявку

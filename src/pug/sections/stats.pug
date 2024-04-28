@@ -1,0 +1,22 @@
+-
+  var stats = [
+    {
+      num: '126',
+      desc: 'Успешно выполненных заявок'
+    },
+    {
+      num: '5 000',
+      desc: 'Обработаных товаров'
+    },
+    {
+      num: '98%',
+      desc: 'KPI своевременности доставки'
+    },
+  ]
+
+section.section.stats 
+  .container 
+    .stats__wrapper 
+      for stat in stats
+        .stats__item= stat.desc
+          span= stat.num

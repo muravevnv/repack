@@ -1,0 +1,23 @@
+header.header 
+  .header__container.container 
+    a.header__logo(href="#")
+      img(src="./images/logo.png", alt="") 
+    nav.header__nav 
+      ul.header__nav-list 
+        li 
+          a.hover-link(href="") Расчет стоимости
+        li 
+          a.hover-link(href="") Этапы работы
+        li 
+          a.hover-link(href="") Услуги
+        li 
+          a.hover-link(href="") FAQ
+        li 
+          a.hover-link(href="") Контакты
+    .header__contacts
+      a.header__tel.hover-link(href="tel:+79002381100")
+        +svgSprite(24, 24, 'tel')
+        span +7 900 238 11 00 
+      a.header__btn.btn.btn--outline.btn--icon(href="#") 
+        img(src="./images/tg.svg", alt="")
+        span Свяжитесь с нами 

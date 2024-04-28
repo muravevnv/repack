@@ -1,0 +1,40 @@
+section.contacts.section
+  .container 
+    .section__title.h2 Контакты
+    .contacts__wrapper 
+      .contacts__info 
+        .contacts__item 
+          .contacts__item-icon 
+            +svgSprite(24, 24, 'map-pin')
+          .contacts__item-info 
+            span Адрес:
+            | 141008, Россия, Московская область, Мытищи, ул. Колпакова, 44сА <br>
+            | + ссылка на Яндекс карты
+        .contacts__item 
+          .contacts__item-icon 
+            +svgSprite(24, 24, 'clock')
+          .contacts__item-info 
+            span Время работы:
+            | пн-пт, с 10:00 до 19:00
+        .contacts__item 
+          .contacts__item-icon 
+            +svgSprite(24, 24, 'phone')
+          .contacts__item-info 
+            span Телефон:
+            a(href="tel:+79002381100") +7 900 238 11 00
+        .contacts__item 
+          .contacts__item-icon 
+            +svgSprite(24, 24, 'telegram')
+          .contacts__item-info 
+            span Telegram персонального менеджера:
+            a(href="@fulfillment_mpboost") @fulfillment_mpboost
+      .contacts__form 
+        .contacts__form-title Чтобы получить подробный расчет оставьте свой номер телефона
+        form.contacts__form-wrap.contacts-form(action="#")
+          input.contacts-form__input(type="text" placeholder="+7")
+          span.contacts-form__error Текст ошибки
+          button(type="submit").contacts-form__btn.btn.btn--black  Отправить
+        .contacts__form-tel или свяжитесь с нами в Телеграмме
+        a(href="#").contacts__form-contact.btn.btn--icon.btn--outline
+          img(src="./images/tg.svg", alt="")
+          span Связаться через Telegram 

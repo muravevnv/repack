@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--color-blck);
+  padding: rem(40) 0;
+  color: var(--color-whte);
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include media(xs) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__logo {
+    width: rem(132);
+    display: block;
+    margin-bottom: rem(24);
+  }
+
+  &__right {
+    max-width: 218px;
+  }
+
+  &__policy {
+    display: block;
+    margin-bottom: rem(24);
+    text-decoration: underline !important;
+  }
+
+  &__tel {
+    margin-bottom: rem(8);
+  }
+}

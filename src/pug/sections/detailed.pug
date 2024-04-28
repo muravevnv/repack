@@ -1,0 +1,15 @@
+section.detailed 
+  .container 
+    .detailed__wrapper 
+      .detailed__info 
+        .detailed__title Чтобы получить подробный расчет оставьте свой номер телефона или свяжитесь с нами в Телеграмме
+        .detailed__actions 
+          form.detailed__actions-form.contacts-form(action="#")
+            input.contacts-form__input(type="text" placeholder="+7")
+            span.contacts-form__error Текст ошибки
+            button(type="submit").contacts-form__btn.btn.btn--black  Отправить
+          a(href="#").detailed__telegram.btn.btn--outline.btn--icon
+            img(src="./images/tg.svg", alt="")
+            span Связаться через Telegram 
+      .detailed__img 
+        img(src="./images/monitor.png", alt="")

@@ -1,0 +1,62 @@
+.header {
+  position: fixed;
+  width: 100%;
+  inset: 0 0 auto 0;
+  padding: 26px 0;
+  box-shadow: 0px 4px 24px 0px #00000029;
+  background-color: cl(whte, .7);
+  backdrop-filter: blur(24px);
+  z-index: 10;
+  
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 132px;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__nav {
+
+    @include media(md) {
+      display: none;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 0 auto;
+
+    @include media(sm) {
+      display: none;
+    }
+  }
+}

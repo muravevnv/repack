@@ -1,0 +1,37 @@
+
+
+//Global
+$font-main: 'Inter', sans-serif;
+$font-size: 16px;
+$transition: 0.25s ease-in-out;
+$line-height: normal;
+
+
+$colors: (
+  "whte": #fff,
+  "blck": #000,
+  "primary": #5600AC,
+  "primary-dark": #220045,
+  "primary-light": #EDDEFF,
+  "pink": #FF00F5,
+  "pink-light": #FFDEFE,
+  "blue": #00A3FF,
+  "blue-light": #DAF2FF,
+  "ocean": #00D0DD,
+  "ocean-light": #DDF9F9,
+  "grey": #D9D9D9,
+  "grey-dark": #767676,
+);
+
+//========================================================================================================================================================
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hextorgb($value)};
+    }
+  }
+
+  --font-primary: #{$font-main};
+}

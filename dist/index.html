@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Главная</title>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="header__container container"> <a class="header__logo" href="#"><img src="./images/logo.png" alt=""></a>
+        <nav class="header__nav"> 
+          <ul class="header__nav-list"> 
+            <li> <a class="hover-link" href="">Расчет стоимости</a></li>
+            <li> <a class="hover-link" href="">Этапы работы</a></li>
+            <li> <a class="hover-link" href="">Услуги</a></li>
+            <li> <a class="hover-link" href="">FAQ</a></li>
+            <li> <a class="hover-link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts"><a class="header__tel hover-link" href="tel:+79002381100">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#tel"></use>
+                </svg><span>+7 900 238 11 00 </span></a><a class="header__btn btn btn--outline btn--icon" href="#"> <img src="./images/tg.svg" alt=""><span>Свяжитесь с нами </span></a></div>
+      </div>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="hero__decor"> <img src="./images/hero/hero-decor.png" alt=""></div>
+        <div class="container hero__container"> 
+          <div class="hero__info"> 
+            <h1 class="hero__title"> <span>Выгодный фулфилмент </span>для вашего бизнеса
+              в Москве
+            </h1>
+            <div class="hero__desc">Упакуем, промаркируем и отгрузим товары на Wildberries, OZON, МЕГАМАРКЕТ и другие маркетплейсы</div>
+            <div class="hero__action"> 
+              <button class="hero__btn btn btn--black" type="button" data-modal-open>Оставить заявку</button>
+              <div class="hero__marketplaces"> 
+                <div class="hero__marketplace"> <img src="./images/ozon.png" alt=""></div>
+                <div class="hero__marketplace"> <img src="./images/wb.png" alt=""></div>
+                <div class="hero__marketplace"> <img src="./images/market.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__img"> <img src="./images/hero/hero.jpg" alt=""></div>
+        </div>
+      </section>
+      <section class="section stats"> 
+        <div class="container"> 
+          <div class="stats__wrapper"> 
+            <div class="stats__item">Успешно выполненных заявок<span>126</span></div>
+            <div class="stats__item">Обработаных товаров<span>5 000</span></div>
+            <div class="stats__item">KPI своевременности доставки<span>98%</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="section advantages"> 
+        <div class="container advantages__container">
+          <div class="advantages__item">
+            <div class="advantages__item-img"> <img src="./images/advantages/advantages-01.png" alt=""></div>
+            <div class="advantages__item-info"> 
+              <div class="advantages__item-title">Принимаем товар из других стран</div>
+              <div class="advantages__item-desc">Проводим полный комплекс услуг фулфилмента согласно требованиям законодательства РФ и российских маркетплейсов</div>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__item-img"> <img src="./images/advantages/advantages-02.png" alt=""></div>
+            <div class="advantages__item-info"> </div>
+            <div class="advantages__item-info"> 
+              <div class="advantages__item-title">Экономим ваше время</div>
+              <div class="advantages__item-desc">Работаем по минимальному пакету документов</div>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__item-img"> <img src="./images/advantages/advantages-03.png" alt=""></div>
+            <div class="advantages__item-info"> </div>
+            <div class="advantages__item-info"> 
+              <div class="advantages__item-title">Гарантируем скорость и прозрачность работы</div>
+              <div class="advantages__item-desc">Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</div>
+            </div>
+          </div>
+          <div class="advantages__item advantages__item--xl">
+            <div class="advantages__item-info"> 
+              <div class="advantages__item-title">Программа лояльности</div>
+              <div class="advantages__item-desc">Вы получаете до 10% от суммы каждого заказа баллами  и можете использовать их при оплате следующего заказа</div>
+              <button class="advantages__item-btn btn btn--black" type="button" data-modal-open>Оставить заявку</button>
+            </div>
+            <div class="advantages__item-img"> <img src="./images/advantages/advantages-04.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <section class="section calculate"> 
+        <div class="container"> 
+          <div class="section__title h2">Расчет стоимости</div>
+          <div class="calculate__wrapper">
+            <div class="calculate__action"> 
+              <div class="calculate__left"> 
+                <div class="calculate__section">
+                  <div class="calculate__section-title">Количество товара</div>
+                  <div class="calculate__section-controls counter"> 
+                    <button class="counter__minus" type="button">
+                          <svg width="12" height="12">
+                            <use xlink:href="images/sprite.svg#minus"></use>
+                          </svg>
+                    </button>
+                    <input class="counter__input" type="number" placeholder="0">
+                    <button class="counter__plus" type="button">
+                          <svg width="12" height="12">
+                            <use xlink:href="images/sprite.svg#plus"></use>
+                          </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="calculate__section">
+                  <div class="calculate__section-title">Забор товара, куб.м.</div>
+                  <div class="calculate__section-controls counter"> 
+                    <button class="counter__minus" type="button">
+                          <svg width="12" height="12">
+                            <use xlink:href="images/sprite.svg#minus"></use>
+                          </svg>
+                    </button>
+                    <input class="counter__input" type="number" placeholder="0">
+                    <button class="counter__plus" type="button">
+                          <svg width="12" height="12">
+                            <use xlink:href="images/sprite.svg#plus"></use>
+                          </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="calculate__section">
+                  <div class="calculate__section-title">Хранение, дни</div>
+                  <div class="calculate__section-controls counter"> 
+                    <button class="counter__minus" type="button">
+                          <svg width="12" height="12">
+                            <use xlink:href="images/sprite.svg#minus"></use>
+                          </svg>
+                    </button>
+                    <input class="counter__input" type="number" placeholder="0">
+                    <button class="counter__plus" type="button">
+                          <svg width="12" height="12">
+                            <use xlink:href="images/sprite.svg#plus"></use>
+                          </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="calculate__right"> 
+                <div class="calculate__section">
+                  <div class="calculate__section-title">Упаковка</div>
+                  <div class="calculate__section-controls">
+                    <label class="form-checkbox" for="check-01">
+                      <input class="form-checkbox__input" type="checkbox" id="check-01"><span class="form-checkbox__text">Бопп-пакет</span>
+                    </label>
+                    <label class="form-checkbox" for="check-02">
+                      <input class="form-checkbox__input" type="checkbox" id="check-02"><span class="form-checkbox__text">Зип-пакет</span>
+                    </label>
+                    <label class="form-checkbox" for="check-03">
+                      <input class="form-checkbox__input" type="checkbox" id="check-03"><span class="form-checkbox__text">ПВД</span>
+                    </label>
+                    <label class="form-checkbox" for="check-04">
+                      <input class="form-checkbox__input" type="checkbox" id="check-04"><span class="form-checkbox__text">Пупырка</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="calculate__section">
+                  <div class="calculate__section-title">Дополнительные услуги</div>
+                  <div class="calculate__section-controls">
+                    <label class="form-checkbox" for="check-05">
+                      <input class="form-checkbox__input" type="checkbox" id="check-05"><span class="form-checkbox__text">Нужна проверка на брак</span>
+                    </label>
+                    <label class="form-checkbox" for="check-06">
+                      <input class="form-checkbox__input" type="checkbox" id="check-06"><span class="form-checkbox__text">Нужна маркировка</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculate__total"> 
+              <div class="calculate__total-info"> 
+                <div class="calculate__total-title">Стоимость работ</div>
+                <div class="calculate__total-price">1 500 ₽</div>
+              </div>
+              <div class="calculate__total-action"> 
+                <div class="calculate__total-desc">Указанная стоимость носит информационный характер и не является окончательной</div>
+                <button class="calculate__total-btn btn btn--black btn--wide" type="button" data-modal-open>Оставить заявку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="detailed"> 
+        <div class="container"> 
+          <div class="detailed__wrapper"> 
+            <div class="detailed__info"> 
+              <div class="detailed__title">Чтобы получить подробный расчет оставьте свой номер телефона или свяжитесь с нами в Телеграмме</div>
+              <div class="detailed__actions"> 
+                <form class="detailed__actions-form contacts-form" action="#">
+                  <input class="contacts-form__input" type="text" placeholder="+7"><span class="contacts-form__error">Текст ошибки</span>
+                  <button class="contacts-form__btn btn btn--black" type="submit"> Отправить</button>
+                </form><a class="detailed__telegram btn btn--outline btn--icon" href="#"><img src="./images/tg.svg" alt=""><span>Связаться через Telegram </span></a>
+              </div>
+            </div>
+            <div class="detailed__img"> <img src="./images/monitor.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <section class="section works"> 
+        <div class="container works__container"> 
+          <div class="section__title h2">Как мы работаем</div>
+          <div class="works__list">
+            <div class="works__line"> <img src="./images/works/works-line-xl.svg" alt=""></div>
+            <div class="works__item works__item--pink">
+              <div class="works__item-num">1</div>
+              <div class="works__item-desc">Получим заявку, проконсультируем и рассчитаем стоимость</div>
+            </div>
+            <div class="works__item works__item--ocean"> 
+              <div class="works__item-num">2</div>
+              <div class="works__item-desc">Вовремя заберем товар с указанного адреса </div>
+            </div>
+            <div class="works__item works__item--blue"> 
+              <div class="works__item-num">3</div>
+              <div class="works__item-desc">Проведем весь комплекс необходимых работ</div>
+            </div>
+            <div class="works__item works__item--purple"> 
+              <div class="works__item-num">4</div>
+              <div class="works__item-desc">Сделаем подробный фотоотчет</div>
+            </div>
+            <div class="works__item works__item--ocean"> 
+              <div class="works__item-num">5</div>
+              <div class="works__item-desc">Организуем хранение на нашем складе</div>
+            </div>
+            <div class="works__item works__item--blue"> 
+              <div class="works__item-num">6</div>
+              <div class="works__item-desc">Оперативно отгрузим на маркетплейс</div>
+            </div>
+            <div class="works__item works__item--pink"> 
+              <div class="works__item-num">7</div>
+              <div class="works__item-desc">Обменяемся документами онлайн</div>
+            </div>
+            <div class="works__item works__item--final">
+              <div class="works__item-img"> <img src="./images/works/works-final.png" alt=""></div>
+            </div>
+          </div>
+          <button class="works__btn btn btn--black" type="button" data-modal-open>Оставить заявку</button>
+        </div>
+      </section>
+      <section class="section services"> 
+        <div class="services__decor"> <img src="./images/services/decor.png" alt=""></div>
+        <div class="services__container container"> 
+          <h2 class="section__title h2">Что мы предлагаем</h2>
+          <div class="services__list"> 
+            <div class="services__item"> 
+              <div class="services__item-title">Проверка на брак</div>
+              <div class="services__item-desc">Внимательно пересчитаем товар и проверим на брак </div>
+            </div>
+            <div class="services__item"> 
+              <div class="services__item-title">Упаковка</div>
+              <div class="services__item-desc">Бережно переупакуем товары в любую упаковку</div>
+            </div>
+            <div class="services__item"> 
+              <div class="services__item-title">Маркировка</div>
+              <div class="services__item-desc">Промаркируем стикерами с баркодами</div>
+            </div>
+            <div class="services__item"> 
+              <div class="services__item-title">Сопровождение</div>
+              <div class="services__item-desc">Сделаем подробный фотоотчет, сообщим о всех этапах работ</div>
+            </div>
+            <div class="services__item"> 
+              <div class="services__item-title">Доставка</div>
+              <div class="services__item-desc">Упакуем в транспортную тару и доставим на склад макретплейса</div>
+            </div>
+            <div class="services__item"> 
+              <div class="services__item-title">Хранение</div>
+              <div class="services__item-desc">Организуем хранение на нашем складе</div>
+            </div>
+          </div>
+          <div class="services__banner"> <img src="../images/error.png" alt=""><span>Чем больше товаров в партии - тем ниже стоимость обработки одного заказа. <br> Нет скрытых и навязанных расходов для наших клиентов</span></div>
+          <button class="services__btn btn btn--black" type="button" data-modal-open>Оставить заявку</button>
+        </div>
+      </section>
+      <section class="section faq"> 
+        <div class="container"> 
+          <div class="section__title h2">FAQ</div>
+          <div class="faq__item"> 
+            <div class="faq__item-head"> 
+              <div class="faq__item-title">Сколько стоит доставка заказов или поставок в маркеплейсы?</div>
+              <div class="faq__item-icon"> </div>
+            </div>
+            <div class="faq__item-desc"> 
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__item-head"> 
+              <div class="faq__item-title">Есть ли забор и доставка день в день?</div>
+              <div class="faq__item-icon"> </div>
+            </div>
+            <div class="faq__item-desc"> 
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__item-head"> 
+              <div class="faq__item-title">Где находится ваш склад?</div>
+              <div class="faq__item-icon"> </div>
+            </div>
+            <div class="faq__item-desc"> 
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__item-head"> 
+              <div class="faq__item-title">Работаете ли вы с физ лицами?</div>
+              <div class="faq__item-icon"> </div>
+            </div>
+            <div class="faq__item-desc"> 
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__item-head"> 
+              <div class="faq__item-title">Работаете ли вы с резидентами других стран?</div>
+              <div class="faq__item-icon"> </div>
+            </div>
+            <div class="faq__item-desc"> 
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__item-head"> 
+              <div class="faq__item-title">Как рассчитывается стоимость услуг?</div>
+              <div class="faq__item-icon"> </div>
+            </div>
+            <div class="faq__item-desc"> 
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+            </div>
+          </div>
+          <div class="faq__item"> 
+            <div class="faq__item-head"> 
+              <div class="faq__item-title">Риски</div>
+              <div class="faq__item-icon"> </div>
+            </div>
+            <div class="faq__item-desc"> 
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+              <p>Обеспечиваем оптимальную скорость обработки заказов, прозрачность процессов и возможность отслеживания статуса заказов в режиме реального времени через персонального менеджера</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts section">
+        <div class="container"> 
+          <div class="section__title h2">Контакты</div>
+          <div class="contacts__wrapper"> 
+            <div class="contacts__info"> 
+              <div class="contacts__item"> 
+                <div class="contacts__item-icon"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="images/sprite.svg#map-pin"></use>
+                      </svg>
+                </div>
+                <div class="contacts__item-info"> <span>Адрес:</span>141008, Россия, Московская область, Мытищи, ул. Колпакова, 44сА <br>
+                  + ссылка на Яндекс карты
+                </div>
+              </div>
+              <div class="contacts__item"> 
+                <div class="contacts__item-icon"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="images/sprite.svg#clock"></use>
+                      </svg>
+                </div>
+                <div class="contacts__item-info"> <span>Время работы:</span>пн-пт, с 10:00 до 19:00</div>
+              </div>
+              <div class="contacts__item"> 
+                <div class="contacts__item-icon"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="images/sprite.svg#phone"></use>
+                      </svg>
+                </div>
+                <div class="contacts__item-info"> <span>Телефон:</span><a href="tel:+79002381100">+7 900 238 11 00</a></div>
+              </div>
+              <div class="contacts__item"> 
+                <div class="contacts__item-icon"> 
+                      <svg width="24" height="24">
+                        <use xlink:href="images/sprite.svg#telegram"></use>
+                      </svg>
+                </div>
+                <div class="contacts__item-info"> <span>Telegram персонального менеджера:</span><a href="@fulfillment_mpboost">@fulfillment_mpboost</a></div>
+              </div>
+            </div>
+            <div class="contacts__form"> 
+              <div class="contacts__form-title">Чтобы получить подробный расчет оставьте свой номер телефона</div>
+              <form class="contacts__form-wrap contacts-form" action="#">
+                <input class="contacts-form__input" type="text" placeholder="+7"><span class="contacts-form__error">Текст ошибки</span>
+                <button class="contacts-form__btn btn btn--black" type="submit"> Отправить</button>
+              </form>
+              <div class="contacts__form-tel">или свяжитесь с нами в Телеграмме</div><a class="contacts__form-contact btn btn--icon btn--outline" href="#"><img src="./images/tg.svg" alt=""><span>Связаться через Telegram </span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="footer__container container"> 
+        <div class="footer__left"> <a class="footer__logo" href="#"><img src="./images/logo-white.png" alt=""></a>
+          <div class="footer__organization">ИП Смирнова Т.Н. <br> ИНН 771543580656 <br> ОГРН 322774600542022</div>
+        </div>
+        <div class="footer__right"> <a class="footer__policy hover-link-light" href="#">Политика конфидициальности</a><a class="footer__tel hover-link-light" href="tel:+79002381100">+7 900 238 11 00</a>
+          <div class="footer__address">Московская область, Мытищи, ул. Колпакова, 44сА 2</div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" data-modal> 
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__content"> 
+        <button class="modal__close" type="button" data-modal-close></button>
+        <div class="modal__title">Оставьте ваш номер телефона <br> и мы вам перезвоним</div>
+        <form class="modal__form contacts-form" action="#">
+          <input class="contacts-form__input" type="text" placeholder="+7"><span class="contacts-form__error">Текст ошибки</span>
+          <button class="contacts-form__btn btn btn--black" type="submit"> Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

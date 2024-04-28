@@ -1,0 +1,29 @@
+// Vendors
+@use "sass:math";
+// Config
+@import 'config/variables';
+@import 'config/mixins';
+@import 'config/reset';
+@import 'config/fonts';
+@import 'config/global';
+@import 'config/typography';
+@import 'config/form';
+
+// Components
+
+@import 'components/btn';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/modal';
+
+//Sections
+
+@import 'sections/hero';
+@import 'sections/stats';
+@import 'sections/advantages';
+@import 'sections/works';
+@import 'sections/services';
+@import 'sections/contacts';
+@import 'sections/faq';
+@import 'sections/calculate';
+@import 'sections/detailed';

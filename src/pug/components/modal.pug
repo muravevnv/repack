@@ -1,0 +1,9 @@
+.modal(data-modal) 
+  .modal__overlay(data-modal-close)
+  .modal__content 
+    button(type="button").modal__close(data-modal-close)
+    .modal__title Оставьте ваш номер телефона <br> и мы вам перезвоним
+    form.modal__form.contacts-form(action="#")
+      input.contacts-form__input(type="text" placeholder="+7")
+      span.contacts-form__error Текст ошибки
+      button(type="submit").contacts-form__btn.btn.btn--black  Отправить
