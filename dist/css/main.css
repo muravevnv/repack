@@ -805,7 +805,7 @@ input[type=number] {
 .stats__item span {
   display: block;
   margin-bottom: 8px;
-  font-size: 1.125pxrem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -1048,6 +1048,7 @@ input[type=number] {
 .services__banner span {
   line-height: 1.4;
   font-weight: 700;
+  font-size: 1.125rem;
 }
 .services__btn {
   max-width: 211px;
@@ -1224,7 +1225,7 @@ input[type=number] {
   margin-top: 1.5rem;
 }
 .calculate__section-title {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -1503,6 +1504,9 @@ input[type=number] {
   .services__banner {
     padding: 15px;
   }
+  .services__banner span {
+    font-size: 0.875rem;
+  }
   .contacts {
     padding-top: 2.5rem;
     background-position: bottom -100px left -200px;
@@ -1524,9 +1528,6 @@ input[type=number] {
   }
   .calculate__wrapper {
     grid-template-columns: 1fr;
-  }
-  .calculate__section-title {
-    font-size: 0.875rem;
   }
   .calculate__total {
     display: grid;
@@ -1832,6 +1833,14 @@ input[type=number] {
   .works__item::before {
     width: 2.5rem;
     right: -40px;
+  }
+}
+@media (min-width: 1400px) {
+  .hero__decor {
+    width: 45%;
+  }
+  .hero__decor img {
+    width: 100%;
   }
 }
 @media (any-hover: hover) {
