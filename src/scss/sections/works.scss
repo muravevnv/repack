@@ -88,6 +88,16 @@
       }
     }
 
+    transform: scale(1);
+    transition: .25s;
+
+    @media(any-hover: hover) {
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
     @include media(md)  {
       padding: 15px;
       min-height: 146px;

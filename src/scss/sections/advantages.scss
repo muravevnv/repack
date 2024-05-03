@@ -27,6 +27,15 @@
     background-color: var(--bg);
     border: 1px solid var(--border);
     overflow: hidden;
+    transform: scale(1);
+    transition: .25s;
+
+    @media(any-hover: hover) {
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
 
     @include media(sm) {
       padding: 15px;

@@ -29,6 +29,17 @@
     align-items: center;
     text-align: center;
 
+
+    &:last-of-type {
+      span {
+        position: relative;
+        
+        &::after {
+          content: '%';
+        }
+      }
+    }
+ 
     @include media(sm) {
       width: 100%;
     }
@@ -55,6 +66,12 @@
       font-size: rem(18);
       font-weight: 700;
       color: var(--color-primary);
+      opacity: 0;
+      transition: .25s;
+
+      &.is-visible {
+        opacity: 1;
+      }
     }
   }
 }

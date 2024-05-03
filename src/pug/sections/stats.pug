@@ -17,6 +17,9 @@
 section.section.stats 
   .container 
     .stats__wrapper 
-      for stat in stats
-        .stats__item= stat.desc
-          span= stat.num
+      .stats__item Успешно выполненных заявок
+        span(data-min="0" data-max="126" class="number") 126
+      .stats__item Обработаных товаров
+        span(data-min="4800" data-max="5000" class="number") 5000
+      .stats__item KPI своевременности доставки
+        span(data-min="0" data-max="98" class="number") 98%

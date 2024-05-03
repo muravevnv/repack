@@ -798,6 +798,12 @@ input[type=number] {
   align-items: center;
   text-align: center;
 }
+.stats__item:last-of-type span {
+  position: relative;
+}
+.stats__item:last-of-type span::after {
+  content: "%";
+}
 .stats__item:not(:last-of-type) {
   padding-right: 24px;
   border-right: 1px solid var(--color-grey);
@@ -808,6 +814,12 @@ input[type=number] {
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-primary);
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.stats__item span.is-visible {
+  opacity: 1;
 }
 
 .advantages__container {
@@ -832,6 +844,10 @@ input[type=number] {
   background-color: var(--bg);
   border: 1px solid var(--border);
   overflow: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 .advantages__item:nth-of-type(1) {
   --bg: var(--color-pink-light);
@@ -926,6 +942,10 @@ input[type=number] {
   border-radius: 16px;
   background-color: var(--bg);
   border: 1px solid var(--border);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 .works__item--blue {
   --bg: var(--color-blue-light);
@@ -1858,6 +1878,14 @@ input[type=number] {
   }
   .modal__close:hover {
     color: var(--color-pink);
+  }
+  .advantages__item:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+  .works__item:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
   }
 }
 /*# sourceMappingURL=main.css.map */
