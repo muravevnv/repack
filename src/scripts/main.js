@@ -40,7 +40,7 @@ counters.forEach((item) => {
   let end = +item.dataset.max;
 
   window.addEventListener("scroll", function onScroll() {
-    if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+    if (window.pageYOffset > numberTop - window.innerHeight) {
       this.removeEventListener("scroll", onScroll);
       var interval = setInterval(function () {
         item.innerHTML = ++start;
@@ -52,3 +52,5 @@ counters.forEach((item) => {
     }
   });
 });
+
+window.scrollTo(0, 1);
